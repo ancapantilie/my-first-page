@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #e9e8e3;
+    font-family: 'Merriweather', serif;
+
+
+}
+
+#info-size {
+    font-size: 10px;
+
+}
+
+#logo-size {
+    font-size: 32px;
+}
+
+.logo {
+    float: left;
+    color: #666666;
+    line-height: 9px;
+}
+
+.header-nav,
+.search {
+    float: right;
+    position: relative;
+
+
+}
+
+a:link {
+    text-decoration: none;
+    color: #666666;
+
+}
+
+/*====================================
+Style search bar
+======================================*/
+.search input[type=text]{
+    width: 210px;
+    height: 26px;
+    background-color: #2d2e2e;
+    border-style: none;
+    border-radius: 10px;
+    margin-left: 50px;
+
+}
+
+#button-style  {
+    width: 24px;
+    height: 18px;
+    border-radius: 105px;
+    border-style: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================
+Clear float
+======================================*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
