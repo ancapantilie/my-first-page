@@ -4,12 +4,14 @@
 body {
     background-color: #e9e8e3;
     font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
 
 
 }
 .container {
-    width: 70%;
-    max-width: 1150px;
+    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
 }
 /*====================================
@@ -30,7 +32,7 @@ Header Styles
     color: #666666;
     line-height: 9px;
     letter-spacing: 1px;
-    margin-right: 270px;
+    margin-right: 165px;
 }
 
 .header-nav,
@@ -39,7 +41,7 @@ Header Styles
     position: relative;
     /*text-align: top;*/
     font-size: 12px;
-    letter-spacing: 2px;
+
 }
 
 a:link {
@@ -60,6 +62,11 @@ a:link {
 .search {
     vertical-align: middle;
 }
+
+.header-nav {
+    margin-right: 48px;
+}
+
 /*====================================
 Style search bar
 ======================================*/
@@ -110,17 +117,45 @@ Main nav styles
     padding: 13px;
     background-color:#2b2b2b ;
     margin-right: -4px;
+
 }
 
 .main-nav li a {
     color: white;
 }
 
+.main-nav {
+    margin-top: 44px;
 
+}
 
+/*====================================
+Image and figcaptionstyles
+======================================*/
+img {
+    border: 1px solid #d6d6d5;
+    padding: 10px;
+    width: 940px;
+    height: 340px;
+    margin-top: 24px;
+    position: relative;
 
+}
 
-
+figcaption {
+    width:600px ;
+    font-size: 13px;
+    line-height: 23px;
+    color: #c2c2c2;
+    padding-left: 13px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    background-color: #0f0f0f;
+    position: absolute;
+    bottom:460px ;
+    left:550px;
+}
 
 
 
