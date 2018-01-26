@@ -1,95 +1,117 @@
 * {
     box-sizing: border-box;
+
 }
 body {
     background-color: #e9e8e3;
     font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
-
-
 }
+
 .container {
     width: 960px;
     margin: 0 auto;
 }
+
 /*====================================
 Header Styles
 ======================================*/
-.info-size {
-    font-size: 10px;
 
+
+.memories-header-wrapper {
+    display: table;
+    padding-top: 49px;
 }
 
-.logo-size {
+.memories-logo {
+    display: table-cell;
+    padding-right: 280px;
+    width: 216px;
+}
+
+.memories-logo .title {
     font-size: 32px;
     text-transform: uppercase;
-}
-
-.logo {
-    /*float: left;*/
     color: #666666;
-    line-height: 9px;
-    letter-spacing: 1px;
-    margin-right: 190px;
+    margin: 0;
+    padding: 0;}
+
+.memories-logo .subtitle {
+    font-size: 10px;
+    color: #666666;
+    margin: 0;
+
 }
 
-.header-nav,
-.search {
-    margin-top:-15px;
+.social-menu {
+    display: table-cell;
+    text-align: right;
+    padding-right: 48px;
+
+}
+
+ .social-menu ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+ .social-menu ul li {
+    margin: 0;
+    list-style-type:none;
+    display: inline-block;
+    padding: 0 4px;
+    border-right: 1px solid #666666;
+
+}
+
+.social-menu ul li:last-of-type{
+    border-right: none;
+}
+
+
+ .social-menu ul li a {
+    color:#666666 ;
+    text-decoration: none;
+}
+
+.memories-search {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.social-menu,
+.memories-search {
+    list-style-type:none;
     position: relative;
     font-size: 12px;
 
 }
 
-a:link {
-    text-decoration: none;
-    color: #666666;
-}
 
-.logo,
-.header-nav,
-.header-nav li,
-.social-menu,
-.search
-{
-    display: inline-block;
-
-}
-.social-menu,
-.search {
-    vertical-align: middle;
-}
-
-.header-nav {
-    margin-right: 48px;
-}
 
 /*====================================
 Style search bar
 ======================================*/
-.search input[type=text]{
+.memories-search input[type=text]{
     width: 210px;
     height: 26px;
     background-color: #2d2e2e;
     border-style: none;
     border-radius: 50px;
-    margin-left: 50px;
     color: #ffffff;
     padding-left: 5px;
 }
-.search input[type=text]::placeholder{
-    color: #ffffff;
-}
+
 
 #button-style  {
-    position: relative;
     width: 18px;
     height: 18px;
     border-radius: 105px;
     border-style: none;
     position: absolute;
-    top: 5px;
+    top: 17px;
     right: 10px;
     text-align: center;
 }
@@ -99,69 +121,173 @@ Style search bar
     left: 2px;
 }
 
-#button-style::after {
-    /*content: "\f002";*/
-    /*color: #000000;*/
-}
 
 
 /*====================================
 Main nav styles
 ======================================*/
-.main-nav li{
+.memories-navbar {
+    margin-top: 44px;
+
+}
+
+.memories-navbar-wrapper {
+    background-color:#2b2b2b;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.memories-navbar li{
     display: inline-block;
     text-transform: uppercase;
     font-size: 12px;
-    padding: 13px;
+    padding: 13px 0;
     background-color:#2b2b2b ;
     margin-right: -4px;
 
 }
 
-.main-nav li a {
+.memories-navbar li a {
     color: white;
-}
-
-.main-nav {
-    margin-top: 44px;
+    text-decoration: none;
+    padding-right:30px ;
 
 }
+
+
 
 /*====================================
 Image and figcaptionstyles
 ======================================*/
-img {
-    border: 1px solid #d6d6d5;
-    padding: 10px;
-    width: 940px;
-    height: 340px;
-    margin-top: 24px;
+.figure-wrapper {
     position: relative;
-    margin-left: 0;
-
 }
 
-figcaption {
+.memories-girl-pic {
+    border: 1px solid #d6d6d5;
+    padding: 8px;
+    margin-top: 24px;
+    margin-left: -39px;/*PICTURE ESCAPES .CONTAINER-TEMPORARY SOLUTION*/
+    /*margin-bottom: 45px;*/
+}
+
+.picture-figcaption {
     width:600px ;
+    height: 120px;
     font-size: 13px;
     line-height: 23px;
     color: #c2c2c2;
-    padding: 20px 30px 10px 13px;
-    background-color: #0f0f0f;
+    padding-left:14px  ;
+    background: rgba(0,0,0,0.7);
     position: absolute;
-    bottom:460px ;
-    left:550px;
+    bottom:20px ;
+    left:20px;
 }
 
 /*====================================
 Middle text
 ======================================*/
+.memories-box{
+    padding: 40px 0;
+}
 .memories-text {
     font-size: 22px;
     font-style: italic;
+    color: #666666;
+    text-align: center;
 }
 
+.memories-fade {
+   color: #666666;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(200,200,200,0), rgba(200, 200, 200, 0.75), rgba(200,200,200,0));
+}
 
+/*====================================
+Boxes style
+======================================*/
+.memories-box-wrapper {
+    width: 225px;
+    height: 380px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.memories-category{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ebc563;
+    font-weight: normal;
+}
+
+.memories-content {
+    font-size: 12px;
+    color: white;
+}
+
+.memories-box-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.memories-pic-box {
+    height:180px ;
+    background: #333333;
+    padding-bottom: 10px;
+}
+
+.memories-text-box{
+    background: #2d2e2e;
+    padding: 20px 14px ;
+}
+
+/*====================================
+Footer style
+======================================*/
+.footer-wrapper{
+    background-color:#131313 ;
+
+}
+.footer-picture {
+    width: 95px;
+    height: 95px;
+    background-color: #333333;
+    border: 1px solid #666666;
+
+
+}
+.footer-picture-wrapper{
+    padding: 4px;
+    width: 105px;
+    border: 1px solid #666666;
+
+}
+.first-column-wrapper {
+    width: 470px;
+}
+
+.second-column-wrapper,
+.third-column-wrapper{
+    width:225px ;
+}
+
+.memories-quarter {
+    color: white;
+}
+.quarter-content-text {
+    color: #989898;
+}
+
+.quarter-content-title {
+    color: #989898;
+}
+
+.read-more {
+    color:#ebc563;
+}
 /*====================================
 Clear float
 ======================================*/
