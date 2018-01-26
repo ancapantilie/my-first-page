@@ -279,20 +279,80 @@ Footer style
 }
 .quarter-content-text {
     color: #989898;
+    font-size: 12px;
 }
 
 .quarter-content-title {
     color: #989898;
+    font-size: 14px;
 }
 
 .read-more {
     color:#ebc563;
+    font-size: 12px;
+    text-align: right;
 }
+
+.footer-copyright-wrapper {
+    background: #2d2e2e;
+    padding: 15px 0;
+
+}
+
+.table-wrapper {
+    display: table;
+}
+.memories-footer-first-column,
+.memories-footer-second-column,
+.memories-footer-third-column {
+    display: table-cell;
+}
+/*.footer-right,*/
+/*.footer-left {*/
+    /*display: table-cell;*/
+/*}*/
+.footer-left {
+    float: left;
+}
+.footer-right {
+    float: right;
+}
+
+/*====================================
+Form Style
+======================================*/
+.name,
+.email,
+.comment {
+    width: 225px;
+    border-radius: 10px;
+    background: #2d2e2e;
+    border: none;
+    padding: 8px 0 0 10px;
+}
+.btn,
+.email,
+.name {
+    height: 30px;
+}
+ .email,
+ .comment,
+ .btn {
+     margin-top: 10px;
+ }
+
+ .btn {
+     width: 80px;
+     border-radius:10px;
+     background: #2d2e2e;
+     border: none;
+     color: #989898;
+ }
 /*====================================
 Clear float
 ======================================*/
-/*.clearfix:after {*/
-    /*content: "";*/
-    /*display: table;*/
-    /*clear: both;*/
-/*}*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
