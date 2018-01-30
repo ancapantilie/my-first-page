@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-
 }
+
 body {
     background-color: #e9e8e3;
     font-family: 'Merriweather', serif;
@@ -17,8 +17,6 @@ body {
 /*====================================
 Header Styles
 ======================================*/
-
-
 .memories-header-wrapper {
     display: table;
     padding-top: 49px;
@@ -35,38 +33,35 @@ Header Styles
     text-transform: uppercase;
     color: #666666;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+}
 
 .memories-logo .subtitle {
     font-size: 10px;
     color: #666666;
     margin: 0;
-
 }
 
 .social-menu {
     display: table-cell;
     text-align: right;
     padding-right: 48px;
-
 }
 
- .social-menu ul {
+.social-menu ul {
     margin: 0;
     padding: 0;
-
 }
 
- .social-menu ul li {
+.social-menu ul li {
     margin: 0;
     list-style-type:none;
     display: inline-block;
     padding: 0 4px;
     border-right: 1px solid #666666;
-
 }
 
-.social-menu ul li:last-of-type{
+.social-menu ul li:last-of-type {
     border-right: none;
 }
 
@@ -79,14 +74,13 @@ Header Styles
 .memories-search {
     display: table-cell;
     vertical-align: middle;
-
 }
+
 .social-menu,
 .memories-search {
     list-style-type:none;
     position: relative;
     font-size: 12px;
-
 }
 
 
@@ -102,6 +96,7 @@ Style search bar
     border-radius: 50px;
     color: #ffffff;
     padding-left: 5px;
+    outline: none;
 }
 
 
@@ -115,6 +110,7 @@ Style search bar
     right: 10px;
     text-align: center;
 }
+
 #button-style .fa-search {
     position: absolute;
     top: 2px;
@@ -128,7 +124,6 @@ Main nav styles
 ======================================*/
 .memories-navbar {
     margin-top: 44px;
-
 }
 
 .memories-navbar-wrapper {
@@ -137,21 +132,19 @@ Main nav styles
     text-align: center;
 }
 
-.memories-navbar li{
+.memories-navbar li {
     display: inline-block;
     text-transform: uppercase;
     font-size: 12px;
     padding: 13px 0;
     background-color:#2b2b2b ;
     margin-right: -4px;
-
 }
 
 .memories-navbar li a {
     color: white;
     text-decoration: none;
     padding-right:30px ;
-
 }
 
 .memories-navbar  li a:hover {
@@ -160,7 +153,7 @@ Main nav styles
 
 
 /*====================================
-Image and figcaptionstyles
+Image styles
 ======================================*/
 .figure-wrapper {
     position: relative;
@@ -170,13 +163,10 @@ Image and figcaptionstyles
     border: 1px solid #d6d6d5;
     padding: 8px;
     margin-top: 24px;
-    margin-left: -39px;/*PICTURE ESCAPES .CONTAINER-TEMPORARY SOLUTION*/
-    /*margin-bottom: 45px;*/
 }
 
 .picture-figcaption {
-    width:600px ;
-    height: 120px;
+    max-width: 50%;
     font-size: 13px;
     line-height: 23px;
     color: #c2c2c2;
@@ -193,6 +183,7 @@ Middle text
 .memories-box{
     padding: 40px 0;
 }
+
 .memories-text {
     font-size: 22px;
     font-style: italic;
@@ -201,7 +192,7 @@ Middle text
 }
 
 .memories-fade {
-   color: #666666;
+    color: #666666;
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(200,200,200,0), rgba(200, 200, 200, 0.75), rgba(200,200,200,0));
@@ -211,14 +202,19 @@ Middle text
 Boxes style
 ======================================*/
 .memories-box-wrapper {
-    width: 225px;
-    height: 380px;
+    max-width: 23%;
     display: inline-block;
     text-align: center;
-    margin-right: 12px;
+    margin: 0 10px 0 6px;
+}
+.memories-box-wrapper:nth-of-type(4n+1) {
+    margin-left: 0;
+}
+.memories-box-wrapper:nth-of-type(4n+4) {
+    margin-right: 0;
 }
 
-.memories-category{
+.memories-category {
     text-transform: uppercase;
     font-size: 12px;
     color: #ebc563;
@@ -237,50 +233,64 @@ Boxes style
 }
 
 .memories-pic-box {
-    height:180px ;
+    /*height:180px ;*/
+
     background: #333333;
     padding-bottom: 10px;
+
+}
+.memories-pic-box img {
+    max-width: 100%;
 }
 
-.memories-text-box{
+
+.memories-text-box {
     background: #2d2e2e;
     padding: 20px 14px ;
+    margin-top: -14px;
 }
 
 /*====================================
 Footer style
 ======================================*/
-.footer-wrapper{
+.footer-wrapper {
     background-color:#131313 ;
-
 }
 .footer-picture {
     width: 95px;
     height: 95px;
     background-color: #333333;
     border: 1px solid #666666;
-
-
 }
-.footer-picture-wrapper{
+
+.fit-picture {
+    max-width: 100%;
+}
+
+.footer-picture-wrapper {
     padding: 4px;
     width: 105px;
     border: 1px solid #666666;
-
 }
+
 .first-column-wrapper {
     width: 470px;
 }
 
 .second-column-wrapper,
-.third-column-wrapper{
+.third-column-wrapper {
     width:225px ;
 }
+
+.memories-footer-post {
+     margin-bottom: 20px;
+ }
 
 .memories-quarter {
     color: white;
     padding-bottom: 28px;
 }
+
 .quarter-content-text {
     color: #989898;
     font-size: 12px;
@@ -292,47 +302,58 @@ Footer style
 }
 .footer-picture-wrapper {
     display: table-cell;
-
 }
+
 .first-column-wrapper {
     padding-bottom: 30px;
 }
+
 .footer-content {
     display: table-cell;
     vertical-align: top;
     padding-left: 20px;
 }
-.read-more {
-    color:#ebc563;
-    font-size: 12px;
-    text-align: right;
-}
 
-.change-color{
+.admin {
     color: #ebc563;
 }
+
+.read-more {
+    display: block;
+    text-align: right;
+    color:#ebc563;
+    font-size: 12px;
+}
+
+a {
+     text-decoration: none;
+ }
+
 .footer-copyright-wrapper {
     background: #2d2e2e;
     padding: 15px 0;
 }
+
 .spacing {
     padding:0;
     margin:0;
 }
+
 .table-wrapper {
     display: table;
 }
+
 .memories-footer-first-column,
 .memories-footer-second-column,
 .memories-footer-third-column {
     display: table-cell;
     padding-right: 20px;
-
 }
 
 .footer-left {
     float: left;
 }
+
 .footer-right {
     float: right;
 }
@@ -348,24 +369,27 @@ Form Style
     background: #2d2e2e;
     border: none;
     padding: 8px 0 0 10px;
+    outline: none;
 }
+
 .btn,
 .email,
 .name {
     height: 30px;
 }
- .email,
- .comment,
- .btn {
+.email,
+.comment,
+.btn {
      margin-top: 10px;
  }
 
- .btn {
+.btn {
      width: 80px;
      border-radius:10px;
      background: #2d2e2e;
      border: none;
      color: #989898;
+     outline: none;
  }
 /*====================================
 Clear float
