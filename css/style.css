@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /*border: 1px solid red;*/
 }
 
 body {
@@ -163,6 +164,7 @@ Image styles
     border: 1px solid #d6d6d5;
     padding: 8px;
     margin-top: 24px;
+
 }
 
 .picture-figcaption {
@@ -175,6 +177,26 @@ Image styles
     position: absolute;
     bottom:20px ;
     left:20px;
+    padding-bottom: 20px;
+}
+
+.arrows-wrapping-box {
+    width: 48px;
+    height: 48px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    text-align: center;
+}
+
+.left-arrow,
+.right-arrow {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 30px;
+    padding-top:6px;
 }
 
 /*====================================
@@ -273,14 +295,6 @@ Footer style
     border: 1px solid #666666;
 }
 
-.first-column-wrapper {
-    width: 470px;
-}
-
-.second-column-wrapper,
-.third-column-wrapper {
-    width:225px ;
-}
 
 .memories-footer-post {
      margin-bottom: 20px;
@@ -294,25 +308,19 @@ Footer style
 .quarter-content-text {
     color: #989898;
     font-size: 12px;
+
 }
 
 .quarter-content-title {
     color: #989898;
     font-size: 14px;
 }
-.footer-picture-wrapper {
-    display: table-cell;
-}
+
 
 .first-column-wrapper {
     padding-bottom: 30px;
 }
 
-.footer-content {
-    display: table-cell;
-    vertical-align: top;
-    padding-left: 20px;
-}
 
 .admin {
     color: #ebc563;
@@ -339,15 +347,38 @@ a {
     margin:0;
 }
 
-.table-wrapper {
-    display: table;
+.footer-content {
+    max-width: 70%;
 }
+
+
 
 .memories-footer-first-column,
 .memories-footer-second-column,
 .memories-footer-third-column {
-    display: table-cell;
+    display: inline-block;
     padding-right: 20px;
+}
+
+.memories-footer-first-column {
+    max-width: 50%;
+}
+
+.memories-footer-second-column{
+    max-width: 25%;
+    vertical-align: top;
+}
+.memories-footer-third-column {
+    max-width: 25%;
+    vertical-align: top;
+}
+
+.footer-picture-wrapper {
+    float: left;
+}
+
+.footer-content {
+    float: right;
 }
 
 .footer-left {
@@ -364,7 +395,7 @@ Form Style
 .name,
 .email,
 .comment {
-    width: 225px;
+    width: 205px;
     border-radius: 10px;
     background: #2d2e2e;
     border: none;
@@ -391,6 +422,20 @@ Form Style
      color: #989898;
      outline: none;
  }
+/*====================================
+Media Query
+======================================*/
+@media screen(max-width:480px) {
+    
+}
+
+
+
+
+
+
+
+
 /*====================================
 Clear float
 ======================================*/
