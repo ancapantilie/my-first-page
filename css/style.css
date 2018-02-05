@@ -114,8 +114,8 @@ Style search bar
 
 #button-style .fa-search {
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 3px;
+    left: 3px;
 }
 
 
@@ -227,7 +227,7 @@ Boxes style
     max-width: 23%;
     display: inline-block;
     text-align: center;
-    margin: 0 10px 0 6px;
+    margin: 0 15px 0 6px;
 }
 .memories-box-wrapper:nth-of-type(4n+1) {
     margin-left: 0;
@@ -351,8 +351,6 @@ a {
     max-width: 70%;
 }
 
-
-
 .memories-footer-first-column,
 .memories-footer-second-column,
 .memories-footer-third-column {
@@ -425,15 +423,129 @@ Form Style
 /*====================================
 Media Query
 ======================================*/
-@media screen(max-width:480px) {
-    
+@media  only screen and (max-width:480px) {
+    .container {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    /*====================================
+    Header
+    ======================================*/
+    .memories-header-wrapper {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    .memories-logo {
+        display: inline;
+    }
+
+    .social-menu {
+        display: block;
+        padding: 0;
+        text-align: inherit;
+    }
+
+    .memories-search {
+        padding-top:20px;
+        display: block;
+    }
+
+    .memories-search input[type=text] {
+        width: 340px;
+        padding-left: 10px;
+    }
+
+    #button-style  {
+        top: 23px;
+        right: 18px;
+    }
+
+    /*====================================
+   Navbar
+   ======================================*/
+    .memories-navbar ul {
+        display: inline-grid;
+    }
+
+
+    /*====================================
+    Image
+    ======================================*/
+    .memories-girl-pic {
+        max-width: 100%;
+    }
+
+    .picture-figcaption,
+    .arrows-wrapping-box {
+        display: none;
+    }
+
+    /*====================================
+    Text
+    ======================================*/
+    .memories-text {
+        font-size: 12px;
+    }
+
+    /*====================================
+    Boxes
+    ======================================*/
+    .memories-box-wrapper {
+        display: block;
+        max-width: 60%;
+        margin:auto;
+        padding: 30px 0 0 0;
+    }
+
+    .memories-box-wrapper:nth-of-type(4n+1){
+        margin-left: auto;
+    }
+
+    .memories-box-wrapper:nth-of-type(4n+4){
+        margin-right: auto;
+    }
+
+    /*====================================
+   Footer
+   ======================================*/
+    .footer-wrapper,
+    .footer-copyright-wrapper{
+        width:100%;
+    }
+
+    .footer-content {
+        max-width: 90%;
+    }
+     .footer-wrapper {
+         text-align: center;
+     }
+
+     .footer-picture-wrapper {
+         float: none;
+         display: block;
+         margin: 0 auto;
+     }
+    .footer-copyright-wrapper {
+        margin-top: -4px;
+    }
+
+    .memories-footer-first-column,
+    .memories-footer-second-column,
+    .memories-footer-third-column {
+        display: inline;
+    }
+
+    .quarter-content-text {
+        font-size:8px;
+    }
+
+    .read-more {
+        text-align: center;
+    }
+
 }
-
-
-
-
-
-
 
 
 /*====================================
