@@ -580,7 +580,7 @@ Media Query
     Navbar
     ======================================*/
     .memories-navbar li a {
-        padding-right: 14px;
+        padding:7px;
     }
 
     .memories-navbar ul {
