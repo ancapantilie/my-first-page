@@ -96,7 +96,7 @@ Style search bar
     border-style: none;
     border-radius: 50px;
     color: #ffffff;
-    padding-left: 5px;
+    padding-left: 10px;
     outline: none;
 }
 
@@ -245,13 +245,14 @@ Boxes style
 
 .memories-content {
     font-size: 12px;
-    color: white;
+    color: #9fa4aa;
 }
 
 .memories-box-title {
     font-size: 18px;
     text-transform: uppercase;
     color: white;
+    font-weight: normal;
 }
 
 .memories-pic-box {
@@ -303,12 +304,13 @@ Footer style
 .memories-quarter {
     color: white;
     padding-bottom: 28px;
+    font-weight: normal;
 }
 
-.quarter-content-text {
+.quarter-content-text,
+.quarter-content-footer-text{
     color: #989898;
     font-size: 12px;
-
 }
 
 .quarter-content-title {
@@ -425,7 +427,7 @@ Media Query
 ======================================*/
 @media  only screen and (max-width:480px) {
     .container {
-        max-width: 360px;
+        max-width: 300px;
         margin: 0 auto;
     }
     /*====================================
@@ -453,7 +455,7 @@ Media Query
     }
 
     .memories-search input[type=text] {
-        width: 340px;
+        width: 300px;
         padding-left: 10px;
     }
 
@@ -463,12 +465,11 @@ Media Query
     }
 
     /*====================================
-   Navbar
+    Navbar
    ======================================*/
     .memories-navbar ul {
         display: inline-grid;
     }
-
 
     /*====================================
     Image
@@ -507,6 +508,10 @@ Media Query
         margin-right: auto;
     }
 
+    .memories-category,
+    .memories-content {
+        font-size: 10px;
+    }
     /*====================================
    Footer
    ======================================*/
@@ -516,11 +521,15 @@ Media Query
     }
 
     .footer-content {
-        max-width: 90%;
+        max-width: 100%;
     }
-     .footer-wrapper {
-         text-align: center;
-     }
+
+    .memories-quarter,
+    .quarter-content-title,
+    .quarter-content-text,
+    form{
+        text-align: center;
+    }
 
      .footer-picture-wrapper {
          float: none;
@@ -538,14 +547,145 @@ Media Query
     }
 
     .quarter-content-text {
-        font-size:8px;
+        font-size:10px;
+    }
+
+    .quarter-content-footer-text {
+        font-size: 7px;
     }
 
     .read-more {
         text-align: center;
     }
-
 }
+
+@media screen and (min-width: 480px) and (max-width:768px) {
+   .container {
+       width:720px;
+       margin: 0 auto;
+   }
+    /*====================================
+    Header
+    ======================================*/
+    .memories-logo {
+        padding: 0;
+    }
+
+    .social-menu {
+        padding-right: 20px;
+        padding-left: 35px;
+    }
+
+    /*====================================
+    Navbar
+    ======================================*/
+    .memories-navbar li a {
+        padding-right: 14px;
+    }
+
+    .memories-navbar ul {
+        padding:0;
+        margin: 0;
+    }
+    /*====================================
+    Clear float
+    ======================================*/
+    .memories-girl-pic {
+        max-width: 100%;
+    }
+
+    .picture-figcaption {
+        max-width:60%;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        line-height: normal;
+        padding-right: 5px;
+    }
+
+    .picture-figcaption h2 {
+        margin: 5px;
+    }
+
+    .arrows-wrapping-box  {
+        width: 40px;
+        height: 40px;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        font-size: 24px;
+    }
+    /*====================================
+    Memories text
+    ======================================*/
+    .memories-text {
+        font-size: 18px;
+    }
+    .footer-copyright-wrapper {
+        margin-top: -3px;
+    }
+
+    /*====================================
+     Memories boxs
+     ======================================*/
+    .memories-box .container {
+        text-align: center;
+    }
+
+    .memories-box-wrapper {
+        max-width: 31%;
+        padding-bottom: 40px;
+    }
+
+    .memories-box-wrapper:nth-of-type(4n+1){
+        margin-left: 6px;
+    }
+
+    .memories-box-wrapper:nth-of-type(4n+4){
+        margin-right: 15px;
+    }
+
+    /*====================================
+    Footer
+    ======================================*/
+    .memories-footer-third-column {
+        display: none;
+    }
+
+    /*.memories-footer-first-column,*/
+    /*.memories-footer-second-column {*/
+        /*max-width: 100%;*/
+    /*}*/
+
+    /*.memories-footer-post*/
+     /*{*/
+        /*max-width: 49%;*/
+
+    /*}*/
+    /*.first-column-wrapper{*/
+        /*max-width: 49%;*/
+    /*}*/
+
+    /*.left-post {*/
+        /*float: left;*/
+    /*}*/
+
+    /*.right-post {*/
+        /*float: right;*/
+    /*}*/
+
+    /*.first-column-wrapper {*/
+        /*display: inline-grid;*/
+    /*}*/
+
+    .memories-footer-first-column {
+        max-width: 60%;
+        margin-right: 80px;
+        margin-left: 20px;
+    }
+}
+
+
 
 
 /*====================================
