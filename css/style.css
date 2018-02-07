@@ -18,6 +18,7 @@ body {
 /*====================================
 Header Styles
 ======================================*/
+
 .memories-header-wrapper {
     display: table;
     padding-top: 49px;
@@ -66,7 +67,6 @@ Header Styles
     border-right: none;
 }
 
-
  .social-menu ul li a {
     color:#666666 ;
     text-decoration: none;
@@ -84,11 +84,10 @@ Header Styles
     font-size: 12px;
 }
 
-
-
 /*====================================
 Style search bar
 ======================================*/
+
 .memories-search input[type=text]{
     width: 210px;
     height: 26px;
@@ -100,7 +99,6 @@ Style search bar
     outline: none;
 }
 
-
 #button-style  {
     width: 18px;
     height: 18px;
@@ -108,7 +106,7 @@ Style search bar
     border-style: none;
     position: absolute;
     top: 17px;
-    right: 10px;
+    right: 5px;
     text-align: center;
 }
 
@@ -117,8 +115,6 @@ Style search bar
     top: 3px;
     left: 3px;
 }
-
-
 
 /*====================================
 Main nav styles
@@ -156,6 +152,7 @@ Main nav styles
 /*====================================
 Image styles
 ======================================*/
+
 .figure-wrapper {
     position: relative;
 }
@@ -164,7 +161,6 @@ Image styles
     border: 1px solid #d6d6d5;
     padding: 8px;
     margin-top: 24px;
-
 }
 
 .picture-figcaption {
@@ -202,6 +198,7 @@ Image styles
 /*====================================
 Middle text
 ======================================*/
+
 .memories-box{
     padding: 40px 0;
 }
@@ -223,15 +220,18 @@ Middle text
 /*====================================
 Boxes style
 ======================================*/
+
 .memories-box-wrapper {
     max-width: 23%;
     display: inline-block;
     text-align: center;
     margin: 0 15px 0 6px;
 }
+
 .memories-box-wrapper:nth-of-type(4n+1) {
     margin-left: 0;
 }
+
 .memories-box-wrapper:nth-of-type(4n+4) {
     margin-right: 0;
 }
@@ -256,16 +256,13 @@ Boxes style
 }
 
 .memories-pic-box {
-    /*height:180px ;*/
-
     background: #333333;
     padding-bottom: 10px;
-
 }
+
 .memories-pic-box img {
     max-width: 100%;
 }
-
 
 .memories-text-box {
     background: #2d2e2e;
@@ -276,6 +273,7 @@ Boxes style
 /*====================================
 Footer style
 ======================================*/
+
 .footer-wrapper {
     background-color:#131313 ;
 }
@@ -295,7 +293,6 @@ Footer style
     width: 105px;
     border: 1px solid #666666;
 }
-
 
 .memories-footer-post {
      margin-bottom: 20px;
@@ -318,11 +315,9 @@ Footer style
     font-size: 14px;
 }
 
-
 .first-column-wrapper {
     padding-bottom: 30px;
 }
-
 
 .admin {
     color: #ebc563;
@@ -392,6 +387,7 @@ a {
 /*====================================
 Form Style
 ======================================*/
+
 .name,
 .email,
 .comment {
@@ -408,6 +404,7 @@ Form Style
 .name {
     height: 30px;
 }
+
 .email,
 .comment,
 .btn {
@@ -422,148 +419,16 @@ Form Style
      color: #989898;
      outline: none;
  }
+
 /*====================================
 Media Query
 ======================================*/
-@media  only screen and (max-width:480px) {
+
+@media screen and (max-width:1199px) {
     .container {
-        max-width: 300px;
+        width:720px;
         margin: 0 auto;
     }
-    /*====================================
-    Header
-    ======================================*/
-    .memories-header-wrapper {
-        display: block;
-        padding: 0;
-        text-align: center;
-    }
-
-    .memories-logo {
-        display: inline;
-    }
-
-    .social-menu {
-        display: block;
-        padding: 0;
-        text-align: inherit;
-    }
-
-    .memories-search {
-        padding-top:20px;
-        display: block;
-    }
-
-    .memories-search input[type=text] {
-        width: 300px;
-        padding-left: 10px;
-    }
-
-    #button-style  {
-        top: 23px;
-        right: 18px;
-    }
-
-    /*====================================
-    Navbar
-   ======================================*/
-    .memories-navbar ul {
-        display: inline-grid;
-    }
-
-    /*====================================
-    Image
-    ======================================*/
-    .memories-girl-pic {
-        max-width: 100%;
-    }
-
-    .picture-figcaption,
-    .arrows-wrapping-box {
-        display: none;
-    }
-
-    /*====================================
-    Text
-    ======================================*/
-    .memories-text {
-        font-size: 12px;
-    }
-
-    /*====================================
-    Boxes
-    ======================================*/
-    .memories-box-wrapper {
-        display: block;
-        max-width: 60%;
-        margin:auto;
-        padding: 30px 0 0 0;
-    }
-
-    .memories-box-wrapper:nth-of-type(4n+1){
-        margin-left: auto;
-    }
-
-    .memories-box-wrapper:nth-of-type(4n+4){
-        margin-right: auto;
-    }
-
-    .memories-category,
-    .memories-content {
-        font-size: 10px;
-    }
-    /*====================================
-   Footer
-   ======================================*/
-    .footer-wrapper,
-    .footer-copyright-wrapper{
-        width:100%;
-    }
-
-    .footer-content {
-        max-width: 100%;
-    }
-
-    .memories-quarter,
-    .quarter-content-title,
-    .quarter-content-text,
-    form{
-        text-align: center;
-    }
-
-     .footer-picture-wrapper {
-         float: none;
-         display: block;
-         margin: 0 auto;
-     }
-    .footer-copyright-wrapper {
-        margin-top: -4px;
-    }
-
-    .memories-footer-first-column,
-    .memories-footer-second-column,
-    .memories-footer-third-column {
-        display: inline;
-    }
-
-    .quarter-content-text {
-        font-size:10px;
-    }
-
-    .quarter-content-footer-text {
-        font-size: 7px;
-    }
-
-    .read-more {
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width:768px) {
-   .container {
-       width:720px;
-       margin: 0 auto;
-   }
     /*====================================
     Header
     ======================================*/
@@ -588,7 +453,7 @@ Media Query
         margin: 0;
     }
     /*====================================
-    Clear float
+    Memories image
     ======================================*/
     .memories-girl-pic {
         max-width: 100%;
@@ -648,44 +513,189 @@ Media Query
     /*====================================
     Footer
     ======================================*/
-    .memories-footer-third-column {
-        display: none;
+
+    .memories-footer-first-column,
+    .memories-footer-second-column {
+        max-width: 30%;
+        margin-right: 40px;
     }
 
-    /*.memories-footer-first-column,*/
-    /*.memories-footer-second-column {*/
-        /*max-width: 100%;*/
-    /*}*/
+    .footer-picture-wrapper {
+        float: none;
+    }
 
-    /*.memories-footer-post*/
-     /*{*/
-        /*max-width: 49%;*/
-
-    /*}*/
-    /*.first-column-wrapper{*/
-        /*max-width: 49%;*/
-    /*}*/
-
-    /*.left-post {*/
-        /*float: left;*/
-    /*}*/
-
-    /*.right-post {*/
-        /*float: right;*/
-    /*}*/
-
-    /*.first-column-wrapper {*/
-        /*display: inline-grid;*/
-    /*}*/
-
-    .memories-footer-first-column {
-        max-width: 60%;
-        margin-right: 80px;
-        margin-left: 20px;
+    .footer-content {
+        float: none;
+        max-width: 100%;
     }
 }
 
+@media  only screen and (max-width:768px) {
+    .container {
+        max-width: 470px;
+        margin: 0 auto;
+    }
+    /*====================================
+    Header
+    ======================================*/
+    .memories-header-wrapper {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
 
+    .memories-logo {
+        display: inline;
+    }
+
+    .social-menu {
+        display: block;
+        padding: 0;
+        text-align: inherit;
+    }
+
+    .memories-search {
+        padding-top:20px;
+        display: block;
+    }
+
+    .memories-search input[type=text] {
+        width: 300px;
+        padding-left: 10px;
+    }
+
+    #button-style  {
+        top: 23px;
+        right: 95px;
+    }
+
+    .social-menu {
+        padding-top: 15px;
+    }
+
+    /*====================================
+    Navbar
+   ======================================*/
+    .memories-navbar ul {
+        display: inline-grid;
+    }
+
+    /*====================================
+    Image
+    ======================================*/
+    .memories-girl-pic {
+        max-width: 100%;
+    }
+
+    .picture-figcaption,
+    .arrows-wrapping-box
+     {
+        display: none;
+    }
+
+    /*====================================
+    Text
+    ======================================*/
+    .memories-text {
+        font-size: 12px;
+    }
+
+    /*====================================
+    Boxes
+    ======================================*/
+    .memories-box-wrapper {
+        display: block;
+        max-width: 40%;
+        margin:auto;
+        padding: 30px 0 0 0;
+    }
+
+    .memories-box-wrapper:nth-of-type(4n+1){
+        margin-left: auto;
+    }
+
+    .memories-box-wrapper:nth-of-type(4n+4){
+        margin-right: auto;
+    }
+
+    .memories-category,
+    .memories-content {
+        font-size: 10px;
+    }
+    /*====================================
+   Footer
+   ======================================*/
+    .footer-wrapper,
+    .footer-copyright-wrapper{
+        width:100%;
+    }
+
+    .footer-content {
+        max-width: 100%;
+    }
+
+    .memories-quarter,
+    .quarter-content-title,
+    .quarter-content-text,
+    form {
+        text-align: center;
+    }
+
+     .footer-picture-wrapper {
+         float: none;
+         display: block;
+         margin: 0 auto;
+     }
+    .footer-copyright-wrapper {
+        margin-top: -4px;
+        text-align: center;
+    }
+
+    .memories-footer-first-column,
+    .memories-footer-second-column,
+    .memories-footer-third-column {
+        display: inline;
+    }
+
+    .quarter-content-text {
+        font-size:10px;
+        padding: 0 30px;
+    }
+
+    .quarter-content-footer-text {
+        font-size: 7px;
+    }
+
+    .read-more {
+        text-align: center;
+    }
+
+    .footer-right,
+    .footer-left {
+        float: none;
+    }
+}
+
+@media  only screen and (max-width:480px) {
+    .container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .social-menu {
+        padding-top: 15px;
+    }
+
+    #button-style  {
+        top: 23px;
+        right: 5px;
+    }
+
+    .footer-left,
+    .footer-right {
+        float: none;
+    }
+}
 
 
 /*====================================
